@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+  <tr class="text-danger">
+        <th class="text-center">Código</th>
+        <th class="text-center">Nome</th>
+        <th class="text-center">Usuário</th>
+        <th class="text-center">Data</th>
+  </tr>
+  <body>
+        <tr *ngFor="let c of corretores">
+            <td>{{ c.codCorretor }}</td>
+            <td>{{ c.nomeCorretor }}</td>
+            <td>{{ c.codUsuarioUltimaAlteracao }}</td>
+            <td>{{ c.dtUltimaAlteracao }}</td>
+        </tr>
+  </body>
+</table>    
